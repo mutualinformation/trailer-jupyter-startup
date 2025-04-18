@@ -4,3 +4,4 @@ description: |
    with no-root and the correct ip:host specification for a reverse proxy"
 runtime: go
 import: github.com/mutualinformation/trailer-jupyter-startup
+type: workspace
