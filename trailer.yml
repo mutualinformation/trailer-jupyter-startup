@@ -1,7 +1,7 @@
 name: "Jupyter Lab startup command"
 description: |
-  "This Trailer.dev recommendation will automatically add set jupyter lab as a startup command,
+  "This Trailer.dev recommendation will automatically add jupyter lab as a startup command,
    with no-root and the correct ip:host specification for a reverse proxy"
 runtime: go
 import: github.com/mutualinformation/trailer-jupyter-startup
-type: workspace
+type: image
