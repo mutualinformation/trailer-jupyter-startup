@@ -13,7 +13,7 @@ func environmentHasJupyter(environment Environment) bool {
 	return false
 }
 
-func Match(serializedImageConfig []byte) (bool, error) {
+func Match(serializedImageConfig []byte, _ []byte) (bool, error) {
 	var configuration ImageConfiguration
 
 	if err := json.Unmarshal(serializedImageConfig, &configuration); err != nil {
@@ -31,7 +31,7 @@ func Match(serializedImageConfig []byte) (bool, error) {
 	return false, nil
 }
 
-func Recommend(serializedImageConfig []byte) ([]byte, error) {
+func Recommend(serializedImageConfig []byte, _ []byte) ([]byte, error) {
 	var configuration ImageConfiguration
 
 	if err := json.Unmarshal(serializedImageConfig, &configuration); err != nil {
