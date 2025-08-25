@@ -5,3 +5,4 @@ description: |
 runtime: go
 import: github.com/mutualinformation/trailer-jupyter-startup
 type: image
+defaultConfiguration: ""
